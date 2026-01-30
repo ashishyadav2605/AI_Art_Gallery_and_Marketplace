@@ -48,6 +48,13 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    # Production URLs
+    "https://ai-art-gallery-and-marketplace.vercel.app",
+    "https://ai-art-gallery-and-marketplace-ashishyadav2605s-projects.vercel.app",
+]
+# Also allow any Vercel preview URLs
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
 ]
 CORS_ALLOW_CREDENTIALS = True
 
